@@ -1,10 +1,42 @@
-import React, { useEffect, useState } from "react";
-
+import React, { useEffect, useReducer, useState } from "react";
+import EventCard from "./EventCard.js";
+import { getNextFour } from "./Constants.js";
 const RightLanding = () => {
-  //   useEffect(() => {
-  //     const timer = setTimeout(() => {}, 3000);
-  //     return () => reset;
-  //   }, []);
+  const initialIndex = {
+    one: "small-nav mx-1 bg-blue",
+    two: "small-nav mx-1 bg-gray",
+    three: "small-nav mx-1 bg-gray",
+  };
+  const [displayEvents, setDisplayEvents] = useState(getNextFour());
+  const [indexSetting, setIndexSetting] = useState(initialIndex);
+  const [index, setIndex] = useState(1);
+  const totalPanels = 3;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDisplayEvents(getNextFour());
+      if (index % totalPanels == 1) {
+        setIndexSetting({
+          one: "small-nav mx-1 bg-gray",
+          two: "small-nav mx-1 bg-blue",
+          three: "small-nav mx-1 bg-gray",
+        });
+      } else if (index % totalPanels == 2) {
+        setIndexSetting({
+          one: "small-nav mx-1 bg-gray",
+          two: "small-nav mx-1 bg-gray",
+          three: "small-nav mx-1 bg-blue",
+        });
+      } else {
+        setIndexSetting(initialIndex);
+      }
+      setIndex(index + 1);
+    }, 5000);
+    return () => clearTimeout(interval);
+
+    //   return () => reset;
+  }, [index]);
+
+  console.log("Display-----", displayEvents);
   return (
     <div className="full-wid-hei bg-white-blur p-2 px-4">
       <div data-aos="fade-left">
@@ -28,11 +60,18 @@ const RightLanding = () => {
           <br />
           Events of Interst I've Been To
         </p>
-        <div className="d-flex flex-row mt-5">
-          <RightLanding />
-          <RightLanding />
-          <RightLanding />
-          <RightLanding />
+        <div
+          className="d-flex flex-row justify-content-around mt-5"
+          data-aos="fade-bottom"
+        >
+          {displayEvents.map((event) => (
+            <EventCard data={event} />
+          ))}
+        </div>
+        <div className="d-flex flex-row justify-content-center">
+          <div className={indexSetting.one}></div>
+          <div className={indexSetting.two}></div>
+          <div className={indexSetting.three}></div>
         </div>
       </div>
     </div>
