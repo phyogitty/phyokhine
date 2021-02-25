@@ -6,7 +6,7 @@ import {
   flippo,
   yse,
   shewhocodes,
-} from "./ProjectsInfo.js";
+} from "./Constants.js";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "./Card";
 
