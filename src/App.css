@@ -37,6 +37,9 @@
   }
 }
 
+@import "./css/font-size.css";
+@import "./css/font-color.css";
+@import "./css/bg-color.css";
 .center {
   display: flex;
   flex-direction: column;
@@ -92,22 +95,15 @@
   position: fixed;
   z-index: 10;
 }
-.bg-white-blur {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-.bg-blue-blur {
-  background-color: rgb(98, 184, 240, 0.6);
-}
-.bg-blue {
-  background-color: rgb(98, 184, 240, 0.6);
-}
-.bg-light-gray {
-  background-color: #e1e3df;
-}
-.bg-gray {
-  background-color: rgb(182, 172, 172);
-}
 
+.social-icon {
+  width: 4vw;
+  height: 4vw;
+}
+.gmail-icon {
+  width: 5vw;
+  height: 5vw;
+}
 .color-turquoise {
   color: #40e0d0;
 }
@@ -132,6 +128,7 @@
   width: 70%;
   height: 100px; /*Adjust the hight to your purposes*/
 }
+
 .card-pic {
   width: 100%;
   height: 20vh;
@@ -143,37 +140,10 @@
 .font-fantasy {
   font-family: fantasy;
 }
-
-.fs-1-3-rem {
-  font-size: 1.3rem;
-}
-.fs-8vw {
-  font-size: 8vw;
-}
-.fs-7vw {
-  font-size: 7vw;
-}
-.fs-6vw {
-  font-size: 6vw;
-}
-.fs-5vw {
-  font-size: 5vw;
-}
-.fs-4vw {
-  font-size: 4vw;
-}
-.fs-3vw {
-  font-size: 3vw;
-}
-.fs-2vw {
-  font-size: 2vw;
-}
-.fs-1-5vw {
+.input::placeholder {
   font-size: 1.5vw;
 }
-.fs-1vw {
-  font-size: 1vw;
-}
+
 .fc-white {
   color: white;
 }

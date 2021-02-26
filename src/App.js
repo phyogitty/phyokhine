@@ -7,7 +7,7 @@ import Home from "./components/Home";
 function App() {
   return (
     <Router>
-      <div className="main-font">
+      <div className="main-font tc-white">
         {/* <TopNav /> */}
         <Switch>
           <Route path="/" exact component={Home} />

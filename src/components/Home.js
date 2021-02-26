@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
-import Landing from "./Landing.js";
-import Projects from "./Projects.js";
+import Landing from "./landing/Landing.js";
+import Projects from "./projects/Projects.js";
 import Footer from "./Footer.js";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { BiUpArrow } from "@react-icons/all-files/bi/BiUpArrow";
 import { BiDownArrow } from "@react-icons/all-files/bi/BiDownArrow";
-
 // import { BiUpArrow } from "@react-icons/all-files/fa/BiUpArrow";
 // import { BiDownArrow } from "@react-icons/all-files/fa/BiDownArrow";
-
+import ContactMe from "./contactme/ContactMe.js";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -68,6 +67,7 @@ function Home() {
       <Landing />
       <Projects />
       <Footer />
+      <ContactMe />
     </div>
   );
 }
