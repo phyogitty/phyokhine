@@ -18,36 +18,62 @@ export const advancers = {
   banner: advancersPic,
   name: "Advancers.ai",
   animate: "fade-right",
+  when: "May 2019 - Jan 2020",
+  award: "Grand Prize @ AngelHacks, Silicon Valley",
+  title: "Start-up, Malaria Diagnosis Using Machine Learning (Mobile/Web)",
+  role: "Android Developer & Team Member",
 };
 
 export const carbonprint = {
   banner: carbonprintPic,
   name: "Carbonprint",
   animate: "fade-right",
+  link: "https://devpost.com/software/carbonprint",
+  when: "Nov 2020 @ TechTogether Boston",
+  award: "Best Sustainability Hack Sponsored by BostonHacks",
+  title:
+    "A Social Mobile App That Tracks and Awards for Sustainable Activities",
+  role: "Front-end Engineer",
 };
 
 export const civildiscord = {
   banner: civildiscordPic,
   name: "Civil Discord",
   animate: "fade-right",
+  link: "https://devpost.com/software/civil-discord",
+  when: "Feb 2021 @ TreeHacks Stanford",
+  role: "Flutter Web Developer",
+  title:
+    "A Social Media Web Platform for Compassionate Discussion Around Civil Topics",
 };
 
 export const flippo = {
   banner: flippoPic,
   name: "Flippopotamus",
   animate: "fade-right",
+  link: "https://github.com/phyogitty/flippopotamus2",
+  when: "Apr 2020",
+  title: "A Memory Flipping Mobile Game",
+  role: "Personal Project",
 };
 
 export const yse = {
   banner: ysePic,
   name: "Youth Society for Education",
   animate: "fade-right",
+  when: "Jan 2019 - Aug 2020",
+  title:
+    "501(c)(3) Non-profit Organization for Underprivileged Youths in Myanmar",
+  role: "Tech Officer",
 };
 
 export const shewhocodes = {
   banner: shewhocodesPic,
   name: "She Who Codes",
   animate: "fade-right",
+  when: "June 2017 - May 2018",
+  title: "Computer Science Club at CCSF Led by Female & Non-Binary Students",
+  role: "Co-President",
 };
 class CycleLink {
   constructor(info, next) {

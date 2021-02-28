@@ -19,7 +19,11 @@ const LeftLanding = () => {
         className="custom-wid-hei profile"
       ></img>
       <div className="d-flex flex-row justify-content-center mt-5">
-        <div className="rounded-circle mx-2 mt-2" data-aos="fade-up-right">
+        <div
+          className="rounded-circle mx-2 mt-2 aos-item"
+          data-aos="fade-up-right"
+          
+        >
           <a href="https://www.linkedin.com/in/phyo-khine/">
             <img src={linkedin} className="social-icon rounded-circle" />
           </a>

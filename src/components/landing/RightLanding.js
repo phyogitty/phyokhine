@@ -38,7 +38,7 @@ const RightLanding = () => {
 
   console.log("Display-----", displayEvents);
   return (
-    <div className="full-wid-hei bg-black-blur p-2 px-4">
+    <div className="full-wid-hei p-2 px-4">
       <div data-aos="fade-left">
         <h1 className="fs-8vw">Phyo Khine</h1>
         <p className="fs-2vw">Aspiring Software Engineer</p>

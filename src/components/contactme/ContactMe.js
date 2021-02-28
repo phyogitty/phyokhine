@@ -23,37 +23,43 @@ export default function ContactMe() {
   }
 
   return (
-    <div id="contactme" className="m-5">
-      <div className="fs-5vw mt-2 mb-3 ">You can reach out to me here...</div>
-      <Form onSubmit={sendEmail}>
-        <Form.Row>
-          <Form.Group as={Col} controlId="formGridName">
-            <Form.Label className="fs-1-5vw">Name</Form.Label>
-            <Form.Control placeholder="Please Enter Your Name" />
-          </Form.Group>
+    <div className="bg-dark">
+      <div id="contactme" className="m-5">
+        <div className="fs-5vw mt-2 mb-3 ">You can reach out to me here...</div>
+        <Form onSubmit={sendEmail}>
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridName">
+              <Form.Label className="fs-1-5vw">Name</Form.Label>
+              <Form.Control placeholder="Please Enter Your Name" />
+            </Form.Group>
 
-          <Form.Group as={Col} controlId="formGridEmail">
-            <Form.Label className="fs-1-5vw">Email</Form.Label>
-            <Form.Control type="email" placeholder="What's Your Email?" />
-          </Form.Group>
-        </Form.Row>
+            <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Label className="fs-1-5vw">Email</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="What's Your Email?"
+                className="bg-warning"
+              />
+            </Form.Group>
+          </Form.Row>
 
-        <Form.Group controlId="formGridSubject">
-          <Form.Label className="fs-1-5vw">Subject</Form.Label>
-          <Form.Control placeholder="Please Enter Subject For Your Message" />
-        </Form.Group>
-        <Form.Group controlId="formGridMessage">
-          <Form.Label className="fs-1-5vw">Message</Form.Label>
-          <Form.Control
-            as="textarea"
-            rows="4"
-            placeholder="What Would You Like To Tell Me About?"
-          />
-        </Form.Group>
-        <Button variant="primary" type="submit" className="my-4">
-          <span className="fs-1-5vw">Deliver Message to Phyo</span>
-        </Button>
-      </Form>
+          <Form.Group controlId="formGridSubject">
+            <Form.Label className="fs-1-5vw">Subject</Form.Label>
+            <Form.Control placeholder="Please Enter Subject For Your Message" />
+          </Form.Group>
+          <Form.Group controlId="formGridMessage">
+            <Form.Label className="fs-1-5vw">Message</Form.Label>
+            <Form.Control
+              as="textarea"
+              rows="4"
+              placeholder="What Would You Like To Tell Me About?"
+            />
+          </Form.Group>
+          <Button variant="primary" type="submit" className="my-4">
+            <span className="fs-1-5vw">Deliver Message to Phyo</span>
+          </Button>
+        </Form>
+      </div>
     </div>
   );
 }

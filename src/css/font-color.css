@@ -1,3 +1,7 @@
 .tc-white {
   color: white;
 }
+
+.tc-gray {
+  color: rgb(220, 220, 220);
+}

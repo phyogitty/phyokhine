@@ -13,6 +13,12 @@
 .bg-light-gray {
   background-color: #e1e3df;
 }
-.bg-gray {
+.bg-pink-gray {
   background-color: rgb(182, 172, 172);
+}
+.bg-gray {
+  background-color: rgb(220, 220, 220);
+}
+.bg-yellow {
+  background-color: red;
 }

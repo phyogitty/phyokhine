@@ -1,3 +1,6 @@
+@import "./css/font-size.css";
+@import "./css/font-color.css";
+@import "./css/bg-color.css";
 .App {
   text-align: center;
 }
@@ -37,9 +40,6 @@
   }
 }
 
-@import "./css/font-size.css";
-@import "./css/font-color.css";
-@import "./css/bg-color.css";
 .center {
   display: flex;
   flex-direction: column;
@@ -55,13 +55,6 @@
   width: 11vw;
 }
 
-/* .bottom-layer-phyo {
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-} */
 .add-bg {
   background: url("images/others/twinpeak.png");
   height: 100%;
@@ -69,16 +62,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* .top-content-phyo { */
-/* position: fixed; */
-/* z-index: 8; */
-/* } */
+
 .custom-wid-hei {
   width: 65%;
-
   max-height: 100%;
-  /* height: 55vh; */
-  /* display: block; */
 }
 
 .full-wid-hei {
@@ -107,11 +94,7 @@
 .color-turquoise {
   color: #40e0d0;
 }
-.nav-btn-size {
-  min-width: 5vh;
-  max-width: auto;
-  height: 5vh;
-}
+
 .blur-image {
   color: rgba(240, 248, 255, 0.6);
 }
@@ -121,11 +104,23 @@
 .under {
   z-index: -1;
 }
+.rotate-vert {
+  transform: rotate(90deg);
+}
+.toggle-style {
+  margin-bottom: 10vw;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+.nav-btn-size {
+  width: 8px;
+  height: 50px;
+  margin-left: 4vw;
+}
 .sticky {
-  /* position: fixed; */
-  /* z-index: 10; */
   position: fixed;
-  width: 70%;
+  /* width: 90%; */
+
   height: 100px; /*Adjust the hight to your purposes*/
 }
 
@@ -153,4 +148,11 @@
 
 .main-font {
   font-family: "Titillium Web", sans-serif;
+}
+
+/* styles.css */
+
+.react-switch {
+  vertical-align: middle;
+  margin-left: 4px;
 }
