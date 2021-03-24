@@ -11,7 +11,7 @@ function App() {
       <div className="main-font">
         {/* <TopNav /> */}
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/phyokhine" exact component={Home} />
         </Switch>
       </div>
     </Router>
