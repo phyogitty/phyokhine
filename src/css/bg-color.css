@@ -1,8 +1,8 @@
 .bg-white-blur {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 .bg-blue-blur {
-  background-color: rgb(98, 184, 240, 0.6);
+  background-color: rgb(98, 184, 240, 0.65);
 }
 .bg-black-blur {
   background-color: rgba(0, 0, 0, 0.6);
@@ -17,8 +17,33 @@
   background-color: rgb(182, 172, 172);
 }
 .bg-gray {
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(220, 220, 220) !important;
 }
 .bg-yellow {
   background-color: red;
 }
+
+.bg-purple-rain {
+  background-color: #694489;
+}
+
+.bg-dark-purple {
+  background-color: #551033;
+}
+
+.bg-purple {
+  background-color: #5e2d79;
+}
+
+.bg-dark-red {
+  background-color: #c51f5d;
+}
+
+.bg-dark-blue {
+  background-color: #173952;
+}
+/* 
+beautiful color
+.bg-light-red {
+  background-color: #0f92b9 !important;
+} */

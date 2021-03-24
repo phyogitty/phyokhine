@@ -18,7 +18,7 @@ const Card = (props) => {
           <h5 className="card-text text-secondary">
             {award}
             <span className="p-1"></span>
-            <FaCrown color="gold" className="pt-0" />
+            <FaCrown color="orange" className="pt-0" />
           </h5>
         )}
         <p className="fs-1vw text-secondary">

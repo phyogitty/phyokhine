@@ -13,6 +13,21 @@ import catalyst2019Pic from "../images/events/catalyst2019.jpg";
 import techtogetherPic from "../images/events/techtogether.jpg";
 import tcsessionPic from "../images/events/tcsession.png";
 import wecodePic from "../images/events/wecode2018.jpg";
+import rassPic from "../images/projects/logo-rass.png";
+import ciscohackathonPic from "../images/events/ciscohack2021.png";
+
+import java from "../images/techstack/java.svg";
+import python from "../images/techstack/python.png";
+import mysql from "../images/techstack/mysql.svg";
+import react from "../images/techstack/react.png";
+import html from "../images/techstack/html.png";
+import css from "../images/techstack/css.png";
+import javascript from "../images/techstack/javascript.png";
+
+import visual from "../images/tools/visual-studio-code.svg";
+import github from "../images/tools/github.png";
+import jupyternotebook from "../images/tools/jupyternotebook.png";
+import firebase from "../images/tools/firebase.png";
 
 export const advancers = {
   banner: advancersPic,
@@ -24,10 +39,20 @@ export const advancers = {
   role: "Android Developer & Team Member",
 };
 
+export const rass = {
+  banner: rassPic,
+  name: "Rass",
+  animate: "fade-right",
+  when: "March 11-14th 2021",
+  award: "UR Winner @ Cisco ENHack@Home",
+  title: "Working Assistant Tool: Notification Filter for Emails",
+  role: "Data Scientist(Machine Learning)",
+  link: "https://github.com/phyogitty/rass-ciscohackathon",
+};
 export const carbonprint = {
   banner: carbonprintPic,
   name: "Carbonprint",
-  animate: "fade-right",
+  animate: "fade-left",
   link: "https://devpost.com/software/carbonprint",
   when: "Nov 2020 @ TechTogether Boston",
   award: "Best Sustainability Hack Sponsored by BostonHacks",
@@ -39,12 +64,12 @@ export const carbonprint = {
 export const civildiscord = {
   banner: civildiscordPic,
   name: "Civil Discord",
-  animate: "fade-right",
+  animate: "fade-left",
   link: "https://devpost.com/software/civil-discord",
   when: "Feb 2021 @ TreeHacks Stanford",
   role: "Flutter Web Developer",
   title:
-    "A Social Media Web Platform for Compassionate Discussion Around Civil Topics",
+    "A Social Web Platform for Compassionate Discussion Around Civil Topics",
 };
 
 export const flippo = {
@@ -70,7 +95,7 @@ export const yse = {
 export const shewhocodes = {
   banner: shewhocodesPic,
   name: "She Who Codes",
-  animate: "fade-right",
+  animate: "fade-left",
   when: "June 2017 - May 2018",
   title: "Computer Science Club at CCSF Led by Female & Non-Binary Students",
   role: "Co-President",
@@ -96,20 +121,25 @@ const picArray = [
   { pic: superpositionPic, year: "2017" },
 ];
 
+const ciscohackathon2021 = new CycleLink(
+  { pic: ciscohackathonPic, year: "2021" },
+  null
+);
 const treehacks2021 = new CycleLink(
   { pic: treehacksPic, year: "2021" },
   new CycleLink({ pic: techtogetherPic, year: "2020" }, null)
 );
-let curr = treehacks2021.getNext();
+ciscohackathon2021.setNext(treehacks2021);
+let curr = ciscohackathon2021.getNext();
 
 for (var i = 0; i < picArray.length; i++) {
   curr.setNext(new CycleLink(picArray[i], null));
   curr = curr.getNext();
 }
 
-curr.setNext(treehacks2021);
+curr.setNext(ciscohackathon2021);
 
-var currEvent = treehacks2021;
+var currEvent = ciscohackathon2021;
 export const getNextFour = () => {
   let tempEvent = currEvent;
   let retList = [];
@@ -120,3 +150,26 @@ export const getNextFour = () => {
   currEvent = currEvent.getNext();
   return retList;
 };
+
+export const themeLight = {
+  textColour: "tc-black",
+  // blurColour1: "bg-white-blur",
+  blurColour1: "bg-blue-blur",
+  blurColour2: "bg-blue-blur",
+  otherBgLight: "bg-blue",
+  otherBgDark: "bg-info",
+  textFieldColour: "bg-light",
+};
+
+export const themeDark = {
+  textColour: "tc-gray",
+  blurColour1: "bg-black-blur",
+  blurColour2: "bg-black-blur",
+  otherBgLight: "bg-dark-blue",
+  otherBgDark: "bg-dark",
+  textFieldColour: "bg-secondary",
+};
+
+export const techstack = [java, python, mysql, html, css, javascript, react];
+
+export const tools = [jupyternotebook, visual, firebase, github];

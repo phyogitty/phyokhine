@@ -6,11 +6,11 @@ const EventCard = (props) => {
       className="d-flex flex-column justify-content-center"
       data-aos="fade-up"
     >
-      <div className=" event-card mr-5">
+      <div className="event-card mr-1 p-1 center">
         <img src={props.data.pic} className="full-wid-hei rounded-circle" />
       </div>
-      <div className="p-3 event-year center">
-        <h4>{props.data.year}</h4>
+      <div className="p-1 event-year center">
+        <h4 className="fs-1-2vw">{props.data.year}</h4>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import EventCard from "./EventCard.js";
-import { getNextFour } from "../Constants.js";
+import { getNextFour, techstack, tools } from "../Constants.js";
 const RightLanding = () => {
   const initialIndex = {
     one: "small-nav mx-1 bg-blue",
@@ -38,16 +39,15 @@ const RightLanding = () => {
 
   console.log("Display-----", displayEvents);
   return (
-    <div className="full-wid-hei p-2 px-4">
+    <div className="full-wid-hei py-3 px-4">
       <div data-aos="fade-left">
         <h1 className="fs-8vw">Phyo Khine</h1>
         <p className="fs-2vw">Aspiring Software Engineer</p>
         <br />
         <p className="fs-1-5vw">
-          Countries 🇲🇲 <span className="pl-1"></span>🇺🇸
+          <strong>Countries</strong> 🇲🇲 <span className="pl-1"></span>🇺🇸
           <br />
-          <br />
-          Education
+          <strong>Education</strong>
           <ul className="fs-1-5vw">
             <li>
               BA in Computer Science, University of Californa, Berkeley, Class
@@ -57,18 +57,59 @@ const RightLanding = () => {
               AS in CS and Math, City College of San Francisco, Class of 2018
             </li>
           </ul>
-          <br />
-          Events of Interst I've Been To
+        </p>
+
+        <div className="d-flex flex-row justify-content-start">
+          <div className="vw-50">
+            <p className="fs-1-5vw">
+              <strong>Tech Stack</strong>
+            </p>
+          </div>
+
+          <div className="vw-50">
+            <p className="fs-1-5vw">
+              <strong>Tools</strong>
+            </p>
+          </div>
+        </div>
+
+        <div className="d-flex flex-row justify-content-start">
+          <div className="vw-45">
+            <div
+              className="gridContainer dash-border rounded"
+              data-aos="fade-bottom"
+            >
+              {techstack.map((tech) => (
+                <img src={tech} className="tech-dim1" />
+              ))}
+            </div>
+          </div>
+          <div className="px-3"></div>
+          <div className="vw-45">
+            {" "}
+            <div
+              className="gridContainer dash-border rounded"
+              data-aos="fade-bottom"
+            >
+              {tools.map((tool) => (
+                <img src={tool} className="tech-dim1" />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <p className="fs-1-5vw mt-3">
+          <strong>Events of Interst I've Been To</strong>
         </p>
         <div
-          className="d-flex flex-row justify-content-around mt-5"
+          className="d-flex flex-row justify-content-around mt-3 vw-60"
           data-aos="fade-bottom"
         >
           {displayEvents.map((event) => (
             <EventCard data={event} />
           ))}
         </div>
-        <div className="d-flex flex-row justify-content-center">
+        <div className="d-flex flex-row justify-content-center vw-60">
           <div className={indexSetting.one}></div>
           <div className={indexSetting.two}></div>
           <div className={indexSetting.three}></div>
