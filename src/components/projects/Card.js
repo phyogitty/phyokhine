@@ -6,7 +6,7 @@ const Card = (props) => {
   const { banner, animate, name, role, when, award, title } = props.data;
   return (
     <div className="shadow-lg text-center bg-gray" data-aos={animate}>
-      <img src={banner} alt="image" className="card-pic" />
+      <img src={banner} alt="some" className="card-pic" />
 
       <div className="card-body text-dark">
         <h3 className="card-title">

@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LeftLanding from "./LeftLanding.js";
 import RightLanding from "./RightLanding.js";

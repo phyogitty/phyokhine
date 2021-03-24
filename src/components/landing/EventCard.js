@@ -7,7 +7,11 @@ const EventCard = (props) => {
       data-aos="fade-up"
     >
       <div className="event-card mr-1 p-1 center">
-        <img src={props.data.pic} className="full-wid-hei rounded-circle" />
+        <img
+          src={props.data.pic}
+          className="full-wid-hei rounded-circle"
+          alt="some"
+        />
       </div>
       <div className="p-1 event-year center">
         <h4 className="fs-1-2vw">{props.data.year}</h4>

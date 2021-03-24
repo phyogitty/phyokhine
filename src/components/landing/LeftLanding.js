@@ -19,23 +19,32 @@ const LeftLanding = () => {
         src={phyo1}
         data-aos="fade-right"
         className="custom-wid-hei profile"
+        alt="some"
       ></img>
       <div className="d-flex flex-row justify-content-center mt-5">
         <div className="rounded-circle mt-2 aos-item">
           <a href="https://www.linkedin.com/in/phyo-khine/">
-            <img src={linkedin} className="social-icon rounded-circle" />
+            <img
+              src={linkedin}
+              className="social-icon rounded-circle"
+              alt="some"
+            />
           </a>
         </div>
 
         <div className="rounded-circle p-2">
           <a href="https://github.com/phyogitty?tab=repositories">
-            <img src={github} className="social-icon rounded-circle" />
+            <img
+              src={github}
+              className="social-icon rounded-circle"
+              alt="some"
+            />
           </a>
         </div>
 
         <div className="p-2">
           <a href="#contactme">
-            <img src={gmail} className="gmail-icon " />
+            <img src={gmail} className="gmail-icon " alt="some" />
           </a>
         </div>
       </div>

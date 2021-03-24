@@ -5,7 +5,6 @@ import Footer from "./Footer.js";
 import { Container, Row, Col } from "react-bootstrap";
 import { BsMoon } from "react-icons/bs/";
 import { BiSun } from "react-icons/bi/";
-import { FaList } from "react-icons/fa/";
 import ContactMe from "./contactme/ContactMe.js";
 import { themeLight, themeDark } from "./Constants.js";
 import Aos from "aos";

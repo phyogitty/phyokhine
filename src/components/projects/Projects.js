@@ -11,7 +11,7 @@ import {
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "./Card";
 import CardEmpty from "./CardEmpty";
-import { HiLightBulb, HiOutlineLightBulb } from "react-icons/hi";
+import { HiOutlineLightBulb } from "react-icons/hi";
 import { VscOrganization } from "react-icons/vsc";
 function Projects(props) {
   const { otherBgLight, textColour } = props.theme;

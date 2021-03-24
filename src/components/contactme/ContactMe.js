@@ -4,7 +4,7 @@ import { Form, Button, Col } from "react-bootstrap";
 export default function ContactMe(props) {
   const { otherBgDark, textColour } = props.theme;
   const themeContactMe = otherBgDark + " " + textColour + " " + "pt-5 center";
-  const textFieldTheme = props.theme.textFieldColour + " text-black";
+  // const textFieldTheme = props.theme.textFieldColour + " text-black";
   // console.log("999 dsfsldkfjksf ----- ", textFieldColour);
   function sendEmail(e) {
     e.preventDefault();

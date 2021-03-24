@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import EventCard from "./EventCard.js";
 import { getNextFour, techstack, tools } from "../Constants.js";
 const RightLanding = () => {
@@ -15,13 +14,13 @@ const RightLanding = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setDisplayEvents(getNextFour());
-      if (index % totalPanels == 1) {
+      if (index % totalPanels === 1) {
         setIndexSetting({
           one: "small-nav mx-1 bg-gray",
           two: "small-nav mx-1 bg-blue",
           three: "small-nav mx-1 bg-gray",
         });
-      } else if (index % totalPanels == 2) {
+      } else if (index % totalPanels === 2) {
         setIndexSetting({
           one: "small-nav mx-1 bg-gray",
           two: "small-nav mx-1 bg-gray",
@@ -80,7 +79,7 @@ const RightLanding = () => {
               data-aos="fade-bottom"
             >
               {techstack.map((tech) => (
-                <img src={tech} className="tech-dim1" />
+                <img src={tech} className="tech-dim1" alt="some" />
               ))}
             </div>
           </div>
@@ -92,7 +91,7 @@ const RightLanding = () => {
               data-aos="fade-bottom"
             >
               {tools.map((tool) => (
-                <img src={tool} className="tech-dim1" />
+                <img src={tool} className="tech-dim1" alt="some" />
               ))}
             </div>
           </div>
