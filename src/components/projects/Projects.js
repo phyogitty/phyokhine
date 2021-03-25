@@ -18,7 +18,7 @@ function Projects(props) {
   const thisTheme = otherBgLight + " " + textColour;
   return (
     <div className={thisTheme} id="projects">
-      <div className="d-flex flex-row justify-content-center center fs-2vw pt-5">
+      <div className="d-flex flex-row justify-content-center center fs-2vw pt-5 mb-4">
         <h3 className="mr-1">Projects</h3>{" "}
         <HiOutlineLightBulb color={textColour} />
       </div>
@@ -57,7 +57,7 @@ function Projects(props) {
           </Col>
         </Row>
       </Container>
-      <div className="d-flex flex-row justify-content-center center fs-2vw pt-5">
+      <div className="d-flex flex-row justify-content-center center fs-2vw pt-5 mb-4">
         <h3 className="mr-1">Organizations</h3>
         <VscOrganization color={textColour} />
       </div>

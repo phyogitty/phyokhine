@@ -1,5 +1,5 @@
 .bg-white-blur {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .bg-blue-blur {
   background-color: rgb(98, 184, 240, 0.65);
@@ -8,10 +8,10 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 .bg-blue {
-  background-color: rgba(122, 221, 246, 0.6);
+  background-color: rgba(122, 221, 246, 0.8);
 }
 .bg-blue-medium {
-  background-color: rgba(12, 164, 202, 0.6);
+  background-color: rgba(12, 164, 202, 0.8);
 }
 .bg-light-gray {
   background-color: #e1e3df;
@@ -44,6 +44,9 @@
 
 .bg-dark-blue {
   background-color: #173952;
+}
+.bg-black {
+  background-color: rgb(22, 20, 20);
 }
 /* 
 beautiful color

@@ -17,7 +17,7 @@ const LeftLanding = (props) => {
       <img
         src={phyo1}
         data-aos="fade-right"
-        className="custom-wid-hei profile"
+        className="custom-wid-hei profile mt-4"
         alt="some"
       ></img>
       <div className="d-flex flex-row justify-content-center mt-5">
@@ -55,7 +55,9 @@ const LeftLanding = (props) => {
           src={frame}
           alt="some"
           className={
-            isDarkMode === true ? "full-wid-hei frame" : "full-wid-hei"
+            isDarkMode === true
+              ? "full-wid-hei my-2 frame"
+              : "full-wid-hei my-2"
           }
         />
       </div>

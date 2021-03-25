@@ -14,7 +14,9 @@ const EventCard = (props) => {
         />
       </div>
       <div className="p-1 event-year center">
-        <h4 className="fs-1-2vw">{props.data.year}</h4>
+        <h4 className="fs-1-2vw">
+          <strong>{props.data.year}</strong>
+        </h4>
       </div>
     </div>
   );

@@ -37,12 +37,8 @@ export const quotes = [
   },
   {
     text:
-      "Imagination is more important than knowledge. knowledge is limited. Imagination encircles the world",
+      "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world",
     author: "Albert Einstein",
-  },
-  {
-    text: "Success is only meaningful and enjoyable if it feels like your own",
-    author: "Michelle Obama",
   },
   {
     text:
@@ -57,7 +53,7 @@ export const advancers = {
   when: "May 2019 - Jan 2020",
   award: "Grand Prize @ AngelHacks, Silicon Valley",
   title: "Start-up, Malaria Diagnosis Using Machine Learning (Mobile/Web)",
-  role: "Android Developer & Team Member",
+  role: "Android Developer & Product Development Intern",
 };
 
 export const rass = {
@@ -108,9 +104,8 @@ export const yse = {
   name: "Youth Society for Education",
   animate: "fade-right",
   when: "Jan 2019 - Aug 2020",
-  title:
-    "501(c)(3) Non-profit Organization for Underprivileged Youths in Myanmar",
-  role: "Tech Officer",
+  title: "Organization for helping Underprivileged Youths in Myanmar",
+  role: "Full-stack Developer",
 };
 
 export const shewhocodes = {
@@ -173,7 +168,7 @@ export const getNextFour = () => {
 };
 
 export const themeLight = {
-  textColour: "tc-black",
+  textColour: "tc-blue",
   // blurColour1: "bg-white-blur",
   blurColour1: "bg-white-blur",
   blurColour2: "bg-white-blur",
@@ -184,11 +179,11 @@ export const themeLight = {
 };
 
 export const themeDark = {
-  textColour: "tc-gray",
+  textColour: "tc-blue-light",
   blurColour1: "bg-black-blur",
   blurColour2: "bg-black-blur",
   otherBgLight: "bg-dark-blue",
-  otherBgDark: "bg-dark",
+  otherBgDark: "bg-black",
   textFieldColour: "bg-secondary",
   isDarkMode: true,
 };

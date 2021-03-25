@@ -9,3 +9,11 @@
 .tc-black {
   color: #000 !important;
 }
+
+.tc-blue-light {
+  /* color: rgb(53, 102, 114); */
+  color: rgb(122, 224, 247);
+}
+.tc-blue {
+  color: rgb(19, 134, 163);
+}

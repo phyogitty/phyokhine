@@ -2,6 +2,7 @@
 @import "./css/font-color.css";
 @import "./css/bg-color.css";
 @import "./css/vw.css";
+@import "./css/font.css";
 .App {
   text-align: center;
 }
@@ -161,10 +162,6 @@
 }
 .wid-30 {
   width: 30%;
-}
-
-.main-font {
-  font-family: "Titillium Web", sans-serif;
 }
 
 /* styles.css */

@@ -40,20 +40,20 @@ const RightLanding = () => {
   return (
     <div className="full-wid-hei py-3 px-4">
       <div data-aos="fade-left">
-        <h1 className="fs-8vw">Phyo Khine</h1>
+        <h1 className="fs-8vw mt-3">
+          <strong>Phyo Khine</strong>
+        </h1>
         <p className="fs-2vw">Aspiring Software Engineer</p>
         <br />
-        <p className="fs-1-5vw">
+        <p className="fs-1-5vw pt-3">
           <strong>Countries</strong> 🇲🇲 <span className="pl-1"></span>🇺🇸
-          <br />
+        </p>
+        <p className="fs-1-5vw">
           <strong>Education</strong>
           <ul className="fs-1-5vw">
             <li>
               BA in Computer Science, University of Californa, Berkeley, Class
-              of 2021
-            </li>
-            <li>
-              AS in CS and Math, City College of San Francisco, Class of 2018
+              of 2021 (May)
             </li>
           </ul>
         </p>
@@ -97,7 +97,7 @@ const RightLanding = () => {
           </div>
         </div>
 
-        <p className="fs-1-5vw mt-3">
+        <p className="fs-1-5vw mt-4">
           <strong>Events of Interst I've Been To</strong>
         </p>
         <div
