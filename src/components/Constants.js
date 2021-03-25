@@ -43,7 +43,7 @@ export const quotes = [
   {
     text:
       "Computer Science is no more about computers than astronomy is about telescopes.",
-    author: "Theodore Roosevelt",
+    author: "Edsger Dijkstra",
   },
 ];
 export const advancers = {

@@ -9,7 +9,7 @@ import { Carousel } from "react-bootstrap";
 
 import { quotes } from "../Constants.js";
 const LeftLanding = (props) => {
-  const quoteTextStyle = "fs-1-5vw " + props.textColor;
+  const quoteTextStyle = "fs-1-4vw " + props.textColor;
   const quoteAuthorStyle = "fs-2vw " + props.textColor;
   const isDarkMode = props.isDarkMode;
   return (
@@ -17,7 +17,7 @@ const LeftLanding = (props) => {
       <img
         src={phyo1}
         data-aos="fade-right"
-        className="custom-wid-hei profile mt-4"
+        className="custom-wid-hei profile"
         alt="some"
       ></img>
       <div className="d-flex flex-row justify-content-center mt-5">
