@@ -3,18 +3,17 @@ import phyo1 from "../../images/profiles/phyo-headshot.png";
 import linkedin from "../../images/socials/linkedin.png";
 import github from "../../images/socials/github-color.png";
 import gmail from "../../images/socials/gmail-1.png";
+import frame from "../../images/profiles/frame.png";
+import transparent from "../../images/profiles/transparent.png";
+import { Carousel } from "react-bootstrap";
 
-const LeftLanding = () => {
+import { quotes } from "../Constants.js";
+const LeftLanding = (props) => {
+  const quoteTextStyle = "fs-1-5vw " + props.textColor;
+  const quoteAuthorStyle = "fs-2vw " + props.textColor;
+  const isDarkMode = props.isDarkMode;
   return (
     <div className=" my-5 ml-5 mr-4 center">
-      <div
-        className="tc-white fs-1vw mb-5 full-wid-hei"
-        // data-aos="flip-right"
-      >
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        {/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */}
-        {/* ~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-      </div>
       <img
         src={phyo1}
         data-aos="fade-right"
@@ -52,16 +51,31 @@ const LeftLanding = () => {
         className="fs-1vw pt-1 mt-3 full-wid-hei tc-white"
         // data-aos="flip-right"
       >
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        {/* \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ */}
-        {/* ~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+        <img
+          src={frame}
+          alt="some"
+          className={
+            isDarkMode === true ? "full-wid-hei frame" : "full-wid-hei"
+          }
+        />
       </div>
-      <div className="mt-5" data-aos="flip-left">
-        <p className="fs-1-5vw">
-          "If you look at what you have in life, you'll always have more. If you
-          look at what you don't have in life, you'll never have enough."
-        </p>
-        <p className="fs-2vw">- Oprah Winfrey</p>
+      <div className="">
+        <Carousel fade nextIcon={null} prevIcon={null}>
+          {quotes.map((quote) => (
+            <Carousel.Item className={props.textColor}>
+              <img
+                className="d-block w-100"
+                src={transparent}
+                alt="Third slide"
+              />
+
+              <Carousel.Caption className={props.textColor}>
+                <p className={quoteTextStyle}>"{quote.text}"</p>
+                <p className={quoteAuthorStyle}>- {quote.author}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
     </div>
   );

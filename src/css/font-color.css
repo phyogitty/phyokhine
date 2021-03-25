@@ -1,11 +1,11 @@
 .tc-white {
-  color: white;
+  color: white !important;
 }
 
 .tc-gray {
-  color: rgb(220, 220, 220);
+  color: rgb(255, 248, 248) !important;
 }
 
 .tc-black {
-  color: "#fff";
+  color: #000 !important;
 }

@@ -29,6 +29,27 @@ import github from "../images/tools/github.png";
 import jupyternotebook from "../images/tools/jupyternotebook.png";
 import firebase from "../images/tools/firebase.png";
 
+export const quotes = [
+  {
+    text:
+      "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.",
+    author: "Oprah Winfrey",
+  },
+  {
+    text:
+      "Imagination is more important than knowledge. knowledge is limited. Imagination encircles the world",
+    author: "Albert Einstein",
+  },
+  {
+    text: "Success is only meaningful and enjoyable if it feels like your own",
+    author: "Michelle Obama",
+  },
+  {
+    text:
+      "Computer Science is no more about computers than astronomy is about telescopes.",
+    author: "Theodore Roosevelt",
+  },
+];
 export const advancers = {
   banner: advancersPic,
   name: "Advancers.ai",
@@ -154,11 +175,12 @@ export const getNextFour = () => {
 export const themeLight = {
   textColour: "tc-black",
   // blurColour1: "bg-white-blur",
-  blurColour1: "bg-blue-blur",
-  blurColour2: "bg-blue-blur",
+  blurColour1: "bg-white-blur",
+  blurColour2: "bg-white-blur",
   otherBgLight: "bg-blue",
-  otherBgDark: "bg-info",
+  otherBgDark: "bg-blue-medium",
   textFieldColour: "bg-light",
+  isDarkMode: false,
 };
 
 export const themeDark = {
@@ -168,6 +190,7 @@ export const themeDark = {
   otherBgLight: "bg-dark-blue",
   otherBgDark: "bg-dark",
   textFieldColour: "bg-secondary",
+  isDarkMode: true,
 };
 
 export const techstack = [java, python, mysql, html, css, javascript, react];

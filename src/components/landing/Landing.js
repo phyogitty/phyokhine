@@ -14,7 +14,10 @@ const Landing = (props) => {
       <Container className="px-0" fluid>
         <Row noGutters>
           <Col lg={4} md={3} sm={2} className={landingLeftTheme}>
-            <LeftLanding />
+            <LeftLanding
+              textColor={props.theme.textColour}
+              isDarkMode={props.theme.isDarkMode}
+            />
           </Col>
           <Col lg={8} md={9} sm={10} className={landingRightTheme}>
             <RightLanding />
