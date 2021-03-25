@@ -98,7 +98,7 @@ const RightLanding = () => {
         </div>
 
         <p className="fs-1-5vw mt-4">
-          <strong>Events of Interst I've Been To</strong>
+          <strong>Events of Interest I've Been To</strong>
         </p>
         <div
           className="d-flex flex-row justify-content-around mt-3 vw-60"
