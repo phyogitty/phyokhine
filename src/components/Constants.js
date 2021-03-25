@@ -37,7 +37,7 @@ export const quotes = [
   },
   {
     text:
-      "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world",
+      "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.",
     author: "Albert Einstein",
   },
   {
