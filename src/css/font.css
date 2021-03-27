@@ -1,4 +1,24 @@
 .main-font {
   /* font-family: "Titillium Web", sans-serif; */
-  font-family: "Barlow", sans-serif;
+  /* font-family: "Barlow", sans-serif; */
+  /* font-family: "Righteous", cursive; */
+  /* font-family: "Acme", sans-serif; */
+  /* font-family: "Merriweather", serif; */
+  font-family: "Asap", sans-serif;
+}
+
+.name-font1 {
+  font-family: "Merriweather", serif;
+}
+
+.name-font2 {
+  font-family: "Train One", cursive;
+}
+
+.name-font3 {
+  font-family: "Acme", sans-serif;
+}
+
+.name-font4 {
+  font-family: "Righteous", cursive;
 }

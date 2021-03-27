@@ -9,7 +9,7 @@ import { Carousel } from "react-bootstrap";
 
 import { quotes } from "../Constants.js";
 const LeftLanding = (props) => {
-  const quoteTextStyle = "fs-1-4vw " + props.textColor;
+  const quoteTextStyle = "fs-1-3vw " + props.textColor;
   const quoteAuthorStyle = "fs-2vw " + props.textColor;
   const isDarkMode = props.isDarkMode;
   return (
