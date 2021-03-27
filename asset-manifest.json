@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/phyokhine/static/css/main.e2791370.chunk.css",
-    "main.js": "/phyokhine/static/js/main.85ad5e1e.chunk.js",
-    "main.js.map": "/phyokhine/static/js/main.85ad5e1e.chunk.js.map",
-    "runtime-main.js": "/phyokhine/static/js/runtime-main.233cc1ed.js",
-    "runtime-main.js.map": "/phyokhine/static/js/runtime-main.233cc1ed.js.map",
+    "main.css": "/phyokhine/static/css/main.a2d832a4.chunk.css",
+    "main.js": "/phyokhine/static/js/main.40e8df0b.chunk.js",
+    "main.js.map": "/phyokhine/static/js/main.40e8df0b.chunk.js.map",
+    "runtime-main.js": "/phyokhine/static/js/runtime-main.fada7a75.js",
+    "runtime-main.js.map": "/phyokhine/static/js/runtime-main.fada7a75.js.map",
     "static/css/2.1c44f44c.chunk.css": "/phyokhine/static/css/2.1c44f44c.chunk.css",
-    "static/js/2.0fab579a.chunk.js": "/phyokhine/static/js/2.0fab579a.chunk.js",
-    "static/js/2.0fab579a.chunk.js.map": "/phyokhine/static/js/2.0fab579a.chunk.js.map",
-    "static/js/3.efcb84eb.chunk.js": "/phyokhine/static/js/3.efcb84eb.chunk.js",
-    "static/js/3.efcb84eb.chunk.js.map": "/phyokhine/static/js/3.efcb84eb.chunk.js.map",
+    "static/js/2.e584e08e.chunk.js": "/phyokhine/static/js/2.e584e08e.chunk.js",
+    "static/js/2.e584e08e.chunk.js.map": "/phyokhine/static/js/2.e584e08e.chunk.js.map",
+    "static/js/3.e1b97ae1.chunk.js": "/phyokhine/static/js/3.e1b97ae1.chunk.js",
+    "static/js/3.e1b97ae1.chunk.js.map": "/phyokhine/static/js/3.e1b97ae1.chunk.js.map",
     "index.html": "/phyokhine/index.html",
     "static/css/2.1c44f44c.chunk.css.map": "/phyokhine/static/css/2.1c44f44c.chunk.css.map",
-    "static/css/main.e2791370.chunk.css.map": "/phyokhine/static/css/main.e2791370.chunk.css.map",
-    "static/js/2.0fab579a.chunk.js.LICENSE.txt": "/phyokhine/static/js/2.0fab579a.chunk.js.LICENSE.txt",
+    "static/css/main.a2d832a4.chunk.css.map": "/phyokhine/static/css/main.a2d832a4.chunk.css.map",
+    "static/js/2.e584e08e.chunk.js.LICENSE.txt": "/phyokhine/static/js/2.e584e08e.chunk.js.LICENSE.txt",
     "static/media/advancers.6dc5ddaa.png": "/phyokhine/static/media/advancers.6dc5ddaa.png",
     "static/media/angelhacks.351cec0c.jpg": "/phyokhine/static/media/angelhacks.351cec0c.jpg",
     "static/media/calhacks2019-1.c3efe73b.png": "/phyokhine/static/media/calhacks2019-1.c3efe73b.png",
@@ -47,10 +47,10 @@
     "static/media/yse-light.13a1d7e4.png": "/phyokhine/static/media/yse-light.13a1d7e4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.233cc1ed.js",
+    "static/js/runtime-main.fada7a75.js",
     "static/css/2.1c44f44c.chunk.css",
-    "static/js/2.0fab579a.chunk.js",
-    "static/css/main.e2791370.chunk.css",
-    "static/js/main.85ad5e1e.chunk.js"
+    "static/js/2.e584e08e.chunk.js",
+    "static/css/main.a2d832a4.chunk.css",
+    "static/js/main.40e8df0b.chunk.js"
   ]
 }
