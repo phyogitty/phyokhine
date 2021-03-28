@@ -11,7 +11,7 @@ export default function ContactMe(props) {
     emailjs
       .sendForm(
         "gmail",
-        "template_8b0yp87",
+        "template_k8ujyga",
         e.target,
         "user_M9wuMZTrmgir5zHFFWNA0"
       )
